@@ -19,7 +19,11 @@ public class BugController : MonoBehaviour {
 		//Destroy(other.gameObject);
 
 		Debug.Log("TRIGGER WORKING");
-		Destroy(gameObject);
+		if(other.gameObject.tag == "Bullet")
+		{
+			Destroy(gameObject);			
+		}
+
 
 	}
 }

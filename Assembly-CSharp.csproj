@@ -49,6 +49,7 @@
      <Compile Include="Assets\SHMUPBasics\Scritps\Advanced\RandomHSB.cs" />
      <Compile Include="Assets\SHMUPBasics\Scritps\Advanced\ScreenWrap.cs" />
      <Compile Include="Assets\SHMUPBasics\Scritps\Basic\BugController.cs" />
+     <Compile Include="Assets\SHMUPBasics\Scritps\Basic\BugSpawn.cs" />
      <Compile Include="Assets\SHMUPBasics\Scritps\Basic\BulletColliderController.cs" />
      <Compile Include="Assets\SHMUPBasics\Scritps\Basic\BulletShootController.cs" />
      <Compile Include="Assets\SHMUPBasics\Scritps\Basic\DestroyOnInvisible.cs" />
