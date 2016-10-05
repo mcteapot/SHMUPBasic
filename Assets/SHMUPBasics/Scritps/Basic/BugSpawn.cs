@@ -19,7 +19,7 @@ public class BugSpawn : MonoBehaviour {
 		
 		if(SpanIsRunning == false)
 		{
-			coroutine = WaitAndSpawnBug(2.0f);
+			coroutine = WaitAndSpawnBug(Random.Range(1.0f, 3.0f));
 			StartCoroutine(coroutine);
 		}
 
@@ -28,7 +28,7 @@ public class BugSpawn : MonoBehaviour {
 
 	private IEnumerator WaitAndSpawnBug(float waitTime) {
 		SpanIsRunning = true;
-		Debug.Log("Wait HERE");
+		Debug.Log("Wait HERE: " + waitTime);
 		yield return new WaitForSeconds(waitTime);
 		Instantiate(bugPrefab, transform.position, transform.rotation);
 		Debug.Log("SPAWN BUG");
