@@ -28,10 +28,10 @@ public class BugSpawn : MonoBehaviour {
 
 	private IEnumerator WaitAndSpawnBug(float waitTime) {
 		SpanIsRunning = true;
-		Debug.Log("Wait HERE: " + waitTime);
+		//Debug.Log("Wait HERE: " + waitTime);
 		yield return new WaitForSeconds(waitTime);
 		Instantiate(bugPrefab, transform.position, transform.rotation);
-		Debug.Log("SPAWN BUG");
+		//Debug.Log("SPAWN BUG");
 		SpanIsRunning = false;
 
 	}

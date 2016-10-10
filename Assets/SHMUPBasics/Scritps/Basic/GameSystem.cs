@@ -3,9 +3,13 @@ using System.Collections;
 
 public class GameSystem : MonoBehaviour {
 
+	public int _PlayerScore;
+	private int playerScore;
+
+
 	// Use this for initialization
 	void Start () {
-	
+		
 	}
 	
 	// Update is called once per frame

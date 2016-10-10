@@ -18,7 +18,7 @@ public class BugController : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		//Destroy(other.gameObject);
 
-		Debug.Log("TRIGGER WORKING");
+		//Debug.Log("TRIGGER WORKING");
 		if(other.gameObject.tag == "Bullet")
 		{
 			Destroy(gameObject);			

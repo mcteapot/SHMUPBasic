@@ -18,13 +18,16 @@ public class ObjectHit : MonoBehaviour {
 
 	void OnCollisionEnter(Collision collision) {
 
-
 		if(collision.gameObject.tag == "Bullet")
 		{
+
+			//GameSystem.HitByBullet();
+		
 			if(gameSystem != null)
 			{
 				gameSystem.HitByBullet();
 			}
+		
 		}
 		
 	}
