@@ -7,11 +7,18 @@ public class BugSpawn : MonoBehaviour {
 
 	private IEnumerator coroutine;
 
+	public GameObject displayBox;
+
 	private bool SpanIsRunning = false;
 	// Use this for initialization
 	void Start () {
 		coroutine = WaitAndSpawnBug(5.0f);
 		StartCoroutine(coroutine);
+
+		if(displayBox != null)
+		{
+			displayBox.SetActive(false);
+		}
 	}
 	
 	// Update is called once per frame
