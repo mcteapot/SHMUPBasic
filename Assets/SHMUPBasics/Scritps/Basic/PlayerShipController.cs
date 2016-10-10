@@ -7,6 +7,10 @@ public class PlayerShipController : MonoBehaviour {
 
 	public float palyerSpeed;
 
+	public string playerHoriz = "Horizontal";
+	public string playerVert = "Vertical";
+
+
 	// Use this for initialization
 	void Start () {
 		thrustEmitter.emit = false;
@@ -23,8 +27,8 @@ public class PlayerShipController : MonoBehaviour {
 	{
 		bool thrustButtonPress = false;
 
-		transform.Translate(Vector3.right * (Input.GetAxis("Horizontal") * Time.deltaTime * palyerSpeed));
-		transform.Translate(Vector3.forward * (Input.GetAxis("Vertical") * Time.deltaTime * palyerSpeed));
+		transform.Translate(Vector3.right * (Input.GetAxis(playerHoriz) * Time.deltaTime * palyerSpeed));
+		transform.Translate(Vector3.forward * (Input.GetAxis(playerVert) * Time.deltaTime * palyerSpeed));
 
 		if(Input.GetAxis("Horizontal") != 0.0f ) 
 		{
