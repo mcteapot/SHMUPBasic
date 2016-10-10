@@ -23,8 +23,8 @@ public class PlayerShipController : MonoBehaviour {
 	{
 		bool thrustButtonPress = false;
 
-		transform.Translate(Vector3.right * (Input.GetAxis("Horizontal") * Time.time * palyerSpeed));
-		transform.Translate(Vector3.forward * (Input.GetAxis("Vertical") * Time.time * palyerSpeed));
+		transform.Translate(Vector3.right * (Input.GetAxis("Horizontal") * Time.deltaTime * palyerSpeed));
+		transform.Translate(Vector3.forward * (Input.GetAxis("Vertical") * Time.deltaTime * palyerSpeed));
 
 		if(Input.GetAxis("Horizontal") != 0.0f ) 
 		{

@@ -22,11 +22,11 @@ public class ObjectHit : MonoBehaviour {
 		{
 
 			//GameSystem.HitByBullet();
-		
-			if(gameSystem != null)
-			{
+			Debug.Log("BUG HIT");
+			//if(gameSystem != null)
+			//{
 				gameSystem.HitByBullet();
-			}
+			//}
 		
 		}
 		
