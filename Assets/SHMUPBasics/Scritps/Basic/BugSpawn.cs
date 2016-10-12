@@ -3,6 +3,7 @@ using System.Collections;
 
 public class BugSpawn : MonoBehaviour {
 
+
 	public GameObject bugPrefab;
 
 	private IEnumerator coroutine;
@@ -12,6 +13,7 @@ public class BugSpawn : MonoBehaviour {
 	private bool SpanIsRunning = false;
 	// Use this for initialization
 	void Start () {
+
 		coroutine = WaitAndSpawnBug(5.0f);
 		StartCoroutine(coroutine);
 
@@ -29,6 +31,7 @@ public class BugSpawn : MonoBehaviour {
 			coroutine = WaitAndSpawnBug(Random.Range(1.0f, 3.0f));
 			StartCoroutine(coroutine);
 		}
+
 
 	
 	}
